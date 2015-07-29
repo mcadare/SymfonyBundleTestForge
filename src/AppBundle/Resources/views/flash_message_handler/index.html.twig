@@ -1,0 +1,18 @@
+{% extends '@App/layout/layout.html.twig' %}
+
+{% block content %}
+    <h1>Flash Message Bundle</h1>
+
+    {% include 'AppBundle:flash:flash.html.twig' %}
+
+    <form action="{{ path('flash_message_handler.flash') }}" method="post">
+        <label for="code">Code</label>
+        <input type="text" name="code" />
+
+        <input type="submit" value="Send">
+    </form>
+{% endblock %}
+
+
+
+

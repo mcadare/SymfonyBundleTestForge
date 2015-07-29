@@ -1,0 +1,23 @@
+{% extends '@App/layout/layout.html.twig' %}
+
+{% block content %}
+    <h1>EventHub Bundle</h1>
+
+    {% include 'AppBundle:flash:flash.html.twig' %}
+
+    <form action="{{ path('order.create') }}" method="post">
+        <fieldset>
+            <legend>Order</legend>
+            <label for="status">Status</label><br>
+            <input type="radio" name="status" value="Valid" checked> Valid<br>
+            <input type="radio" name="status" value="Invalid"> Invalid<br>
+            <input type="radio" name="status" value="Pending"> Pending<br><br>
+
+            <input type="submit" value="Create">
+        </fieldset>
+    </form>
+{% endblock %}
+
+
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<routes xmlns="http://symfony.com/schema/routing"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <import resource="@AppBundle/Resources/config/event_hub/routing.xml" prefix="/event_hub" />
+
+    <import resource="@AppBundle/Resources/config/flash_message_handler/routing.xml" prefix="/flash_message_handler" />
+
+    <route id="app.index" path="/">
+        <default key="_controller">AppBundle:Default:index</default>
+    </route>
+
+    <route id="order.create" path="/order/create">
+        <default key="_controller">AppBundle:Order:create</default>
+    </route>
+</routes>

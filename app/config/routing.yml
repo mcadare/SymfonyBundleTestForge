@@ -1,0 +1,7 @@
+app_imports:
+    resource: "@AppBundle/Resources/config/routing.xml"
+    prefix:   '/'
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

@@ -1,0 +1,11 @@
+{% extends '@App/layout/layout.html.twig' %}
+
+{% block content %}
+    <h1>Symfony Bundles Test Forge</h1>
+
+    <ul>
+        <li><a href="{{ path('flash_message_handler.index') }}">FlashMessageHandlerBundle</a></li>
+        <li><a href="#">MailHandlerBundle</a></li>
+        <li><a href="{{ path('event_hub.index') }}">EventHubBundle</a></li>
+    </ul>
+{% endblock %}
